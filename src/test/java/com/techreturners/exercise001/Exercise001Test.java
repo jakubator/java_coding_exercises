@@ -11,7 +11,6 @@ import org.junit.Ignore;
 public class Exercise001Test {
 
     @Test
-
     public void checkHello() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("Hello", ex001.capitalizeWord("hello"));
@@ -20,14 +19,12 @@ public class Exercise001Test {
     }
 
     @Test
-    @Ignore
     public void checkHelloAlreadyUppercase() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("Hello", ex001.capitalizeWord("Hello"));
     }
 
     @Test
-    @Ignore
     public void checkInitials() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("F.B", ex001.generateInitials("Frederic", "Bonneville"));
@@ -36,7 +33,6 @@ public class Exercise001Test {
     }
 
     @Test
-    @Ignore
     public void checkAddVat() {
         Exercise001 ex001 = new Exercise001();
         assertEquals(120, ex001.addVat(100, 20), 0.0);
