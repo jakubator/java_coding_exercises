@@ -1,12 +1,14 @@
 package com.techreturners.exercise001;
 
-import java.util.List;
+import java.util.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.lang.Character;
+import com.techreturners.exercise001.User;
 //import String;
 
 public class Exercise001 {
+
     public String capitalizeWord(String word) {
         char ch1 = word.charAt(0);
         boolean charCheck = Character.isUpperCase(ch1);
@@ -37,12 +39,28 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        // Add your code here
-        return "";
+        StringBuilder reversed_sentence = new StringBuilder();
+        reversed_sentence.append(sentence);
+        reversed_sentence = reversed_sentence.reverse();
+        String rs = reversed_sentence.toString();
+        return rs;
     }
 
     public int countLinuxUsers(List<User> users) {
-        // Add your code here
-        return 0;
+        
+        //System.out.println(u);
+        
+        //System.out.println(type);
+        Integer counter = 0;
+        
+        for (int i = 0; i < users.size(); i++) {
+            User u = users.get(i);
+            String type = u.getType();
+            if (type == "Linux"){
+                counter += 1;
+            }
+            //System.out.println(users.get(i));
+          }
+        return counter;
     }
 }
