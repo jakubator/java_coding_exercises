@@ -56,7 +56,7 @@ public class Exercise001 {
         for (int i = 0; i < users.size(); i++) {
             User u = users.get(i);
             String type = u.getType();
-            if (type == "Linux"){
+            if (type.equalsIgnoreCase("Linux")){
                 counter += 1;
             }
             //System.out.println(users.get(i));

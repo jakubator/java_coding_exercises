@@ -5,11 +5,7 @@ public class Exercise002 {
 
     public boolean isFromManchester(Person person) {
         String city = person.getCity();
-        if (city == "Manchester") { 
-            return true;
-            
-        }
-        return false;
+        return city.equalsIgnoreCase("Manchester");
     }
 
     public boolean canWatchFilm(Person person, int limit) {
